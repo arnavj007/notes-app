@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 require("dotenv").config({ path: "variables.env" });
 
 mongoose
-  .connect(process.env.DB_URL, {
+  .connect(process.env.MONGO_URL, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false,
